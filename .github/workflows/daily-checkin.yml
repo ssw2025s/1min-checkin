@@ -34,6 +34,7 @@ jobs:
 
     - name: Run auto checkin
       env:
+        ACCOUNTS_JSON: ${{ secrets.ACCOUNTS_JSON }}
         EMAIL: ${{ secrets.EMAIL }}
         PASSWORD: ${{ secrets.PASSWORD }}
         TOTP_SECRET: ${{ secrets.TOTP_SECRET }}
